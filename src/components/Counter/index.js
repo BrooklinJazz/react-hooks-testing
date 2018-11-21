@@ -1,6 +1,7 @@
 import React, { useState, Fragment } from "react"
 import Button from "@material-ui/core/Button";
 import Gist from "react-gist";
+import { ReactHookCounterId } from "common/constants"
 
 export default function Counter(params) {
     const [count, setCount] = useState(0);
@@ -13,7 +14,7 @@ export default function Counter(params) {
                     Click Me
                 </Button>
             </div>
-            <Gist id="7a0849623b33e9fbb08c047daf41fc60"/>
+            <Gist id={ReactHookCounterId} />
         </Fragment>
     )
 }
